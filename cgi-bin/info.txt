@@ -1,0 +1,1 @@
+Python code files are to be placed in cgi-bin folder in www on fedora operating system
