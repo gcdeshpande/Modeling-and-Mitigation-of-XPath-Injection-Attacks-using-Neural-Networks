@@ -1,0 +1,52 @@
+<!--
+/*
+XMLmao - A configurable XML/XPath injection testbed
+Daniel "unicornFurnace" Crowley
+Copyright (C) 2012 Trustwave Holdings, Inc.
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+*/
+-->
+<xmlfile>
+<users>
+	<user>
+		<name first="Jeff" last="Smiley"/>
+		<id>1</id>
+		<username>fakejsmiley</username>
+		<password>fakejsmiley</password>
+		<phone>fake123-456-7890</phone>
+	</user>
+	<user>
+		<name first="Chunk" last="MacRunfast"/>
+		<id>2</id>
+		<username>fakecmacrunfast</username>
+		<password>fakespeedsupto3</password>
+		<phone>fake603-478-4115</phone>
+	</user>
+	<user>
+		<name first="Mitch" last="Hedberg"/>
+		<id>3</id>
+		<username>fakemitch</username>
+		<password>fake@lltogether</password>
+		<phone>fake222-222-2222</phone>
+	</user>
+</users>
+<ssns>
+	<ssn>
+		<username>fakejsmiley</username>
+		<number>fake111-22-3333</number>
+	</ssn>
+	<ssn>
+		<username>fakecmacrunfast</username>
+		<number>fake123-45-6789</number>
+	</ssn>
+	<ssn>
+		<username>fakemitch</username>
+		<number>fake010-10-1010</number>
+	</ssn>
+</ssns>
+</xmlfile>

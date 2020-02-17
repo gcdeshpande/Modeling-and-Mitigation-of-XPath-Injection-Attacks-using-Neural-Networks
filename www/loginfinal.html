@@ -1,0 +1,130 @@
+<html>
+<head>
+<script>
+function loadXMLDoc()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","http://localhost/traindata.txt",true);
+xmlhttp.send();
+}
+
+
+
+
+function loadXMLDoc1()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("myDiv1").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","http://localhost/results.txt",true);
+xmlhttp.send();
+}
+
+function loadXMLDoc2()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("myDiv2").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","http://localhost/log.txt",true);
+xmlhttp.send();
+}
+
+
+</script>
+</head>
+</head>
+<body leftmargin=0 topmargin=0 rightmargin=0 bottommargin=0>
+
+<table>
+<tr><td height=75 align="center" colspan=3 bgcolor="darkblue" style="color:white;font-size:25pt;">Implementation of Prevention of XPath Injection Attack using PyBRAIN Machine Learning Library</td></tr>
+<tr>
+<td valign="top">
+<form action="http://localhost:8080/login" method="post" target="myFrame">
+<table>
+<tr><td bgcolor="powderblue" colspan=2 align="center" height="28"> <b>Login Form</b></td></tr>
+<tr><td> UserName </td><td><input type="text" name="txtName" id="txtName"></td></tr>
+<tr><td> Password </td><td> <input type="password" name="txtPasswd" id="txtPasswd"></td></tr>
+<tr><td align="right"><input type="submit" value="Submit"></td><td align="left"><input type="reset"></td><tr>
+<tr><td colspan=2><iframe name="myFrame" src="about:blank" height=83></iframe></td></tr>
+</table>
+</form>
+</td>
+<td valign="top">
+<table>
+<tr><td width=330 bgcolor="powderblue"  align="center"><b>Neural Network Output</b></td> <td> <button type="button" onclick="loadXMLDoc()">Click to view the output</button></td></tr>
+<tr><td colspan=2><textarea rows="10" cols="70" id="myDiv">
+</textarea></td></tr>
+</table>
+</td>
+
+
+<td  valign="top">
+<table>
+<tr><td width=360 bgcolor="powderblue"  align="center"><b>Analysis of Results</b></td> <td> <button type="button" onclick="loadXMLDoc1()">Analysis of Results</button></td></tr>
+<tr><td colspan=2><textarea rows="10" cols="70" id="myDiv1">
+</textarea></td></tr>
+</table>
+</td>
+</tr>
+
+
+<tr valign="top">
+<td colspan=2 align="center">
+<table  width="100%">
+<tr><td align="center"  height="28" bgcolor="powderblue"><b>General Architecture of the System<b></td></tr>
+<tr><td align=center><img src="http://localhost/arch.jpg" width=700 height=400></td></tr>
+</table>
+</td>
+<td  valign="top">
+<table>
+<tr><td width=425 bgcolor="powderblue"  align="center"><b>Attack Information</b></td> <td> <button type="button" onclick="loadXMLDoc2()">View Log</button></td></tr>
+<tr><td colspan=2><textarea rows="24" cols="70" id="myDiv2">
+</textarea></td></tr>
+</table>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
